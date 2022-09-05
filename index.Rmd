@@ -2,39 +2,31 @@
 title: "Profile Likelihood"
 ---
 
-You're going to sort some questions out! 
+For the following statements, drag and drop the correct options for each example into the correct column, identifying the nuisance parameter/s, the parameter/s of interest, and the corresponding probability density function.
 
-I want to figure out the average height of statistics students at the University of St Andrews. I have some sample data and anticipate that the heights are normally distributed. 
+1. I want to figure out the average height of statistics students at the University of St Andrews. I have some sample data and anticipate that the heights are normally distributed. 
 
 ```{r echo=FALSE}
 library(sortable)
 library(htmltools)
 
-labels1 <- list(
-  "two",
-  "three",
-  htmltools::tags$div("here"
-            )
-  )
-
 bucket_list(
     header = "Identify the correct options for this example from below and move these to the right spot!",
     add_rank_list(
       text = "Drag options from the first column into their appropriate zones",
-      labels = c(
-                "two",
-                "three"
+      labels = c("ℓ(θ)", "ƒ(x) = 1/(σ√2π) * exp[-(1/2) * ((x-μ)/σ)²)]", "θ", "μ", 
+                 "N ~ (μ, σ²)", "σ²", "\U0330θ = (μ, σ²)", "π", "θ * exp[-θ * x]"
     )),
     add_rank_list(
-      text = "This is our nuisance parameter(s)!",
+      text = "This is our probability density function!",
       labels = NULL
-    ),
+      ),
     add_rank_list(
       text = "This is our parameter(s) of interest!",
       labels = NULL
     ),
     add_rank_list(
-      text = "This is our probability density function!",
+      text = "This is our nuisance parameter(s)!",
       labels = NULL
     ))
 ```
