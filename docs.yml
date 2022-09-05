@@ -1,0 +1,8 @@
+---
+title: "Profile Likelihood App"
+
+output:
+  html_document:
+    highlight: textmate
+    css: styles.css
+---
