@@ -10,15 +10,21 @@ I want to figure out the average height of statistics students at the University
 library(sortable)
 library(htmltools)
 
+labels1 <- list(
+  "two",
+  "three",
+  htmltools::tags$div("here"
+            )
+  )
+
 bucket_list(
     header = "Identify the correct options for this example from below and move these to the right spot!",
     add_rank_list(
       text = "Drag options from the first column into their appropriate zones",
       labels = c(
                 "two",
-                "three",
-                htmltools::tags$div("here")
-    ),
+                "three"
+    )),
     add_rank_list(
       text = "This is our nuisance parameter(s)!",
       labels = NULL
@@ -30,6 +36,5 @@ bucket_list(
     add_rank_list(
       text = "This is our probability density function!",
       labels = NULL
-    )
-  )
+    ))
 ```
