@@ -1,9 +1,5 @@
 ---
 title: "Profile Likelihood"
-output:
-  html_document:
-    mathjax: local
-    self_contained: false
 ---
 
 You're going to sort some questions out! 
